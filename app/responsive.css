@@ -1,4 +1,15 @@
 /* Shared spacing and intrinsic sizing for all route families. */
+.direct-service-card{display:flex;flex-direction:column;overflow:hidden;border:1px solid white;border-radius:22px;background:var(--glass-panel);box-shadow:var(--glass-shadow)}
+.direct-service-card h3{font-size:1.35rem;line-height:1.35;margin-bottom:12px}.direct-service-card p{color:#526d64}
+.direct-service-card ul{display:grid;gap:10px;margin:20px 0 24px;padding:0;list-style:none}
+.direct-service-card li{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.6}.direct-service-card li svg{flex-shrink:0;margin-top:4px;color:#258567}
+.direct-service-card .text-link{margin-top:auto;padding-top:12px;justify-content:space-between}
+.unique-service [data-reveal]{opacity:1!important;translate:none!important;transition:none!important}
+.unique-service .service-hero-art,.unique-service .word-mask>span,.unique-service .applied-workflow li{animation:none!important}
+.unique-service [data-tilt]{transform:none!important}
+.mobile-menu-panel{width:min(360px,calc(100vw - 24px));min-width:0;max-height:min(70dvh,var(--radix-dropdown-menu-content-available-height));overscroll-behavior:contain;touch-action:pan-y;animation:none!important}
+.mobile-menu-panel a{min-height:48px;font-size:15px;line-height:1.45}
+@media(max-width:850px){.site-header{z-index:100;isolation:isolate}.nav-dropdown{z-index:110}.mobile-nav{display:block;flex-shrink:0}.nav-shell{overflow:visible}.menu-button{touch-action:manipulation}.mobile-menu-panel{backdrop-filter:none;background:linear-gradient(135deg,#f5fcfff7,#eee5fff7)}}
 :root{--page-gutter:clamp(20px,4vw,48px);--panel-padding:clamp(22px,3vw,38px)}
 .container{width:calc(100% - var(--page-gutter)*2);max-width:1240px}
 .container .container{width:100%}
