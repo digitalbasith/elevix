@@ -1,0 +1,10 @@
+export const dynamic='force-dynamic';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
+import { getPost } from '@/lib/wordpress';
+import { AnimatedText } from '../../components/motion-system';
+import type { Block } from '@/lib/wordpress';
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const {post}=await getPost(slug);return {title:post?.title??'Blog',description:post?.excerpt}}
+export default async function Article({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const {post,unavailable}=await getPost(slug);if(unavailable)return <main id="main" className="container error-state"><h1>This article is taking a moment.</h1><p>Please try loading the article again shortly.</p><Link href="/blogs" className="button button-dark">Back to the blog</Link></main>;if(!post)notFound();return <main id="main" className="inner-main"><div id="top"/><article className="article-container"><Link className="text-link" href="/blogs"><ArrowLeft size={16}/>All insights</Link><span className="eyebrow">{post.category}</span><h1 data-reveal><AnimatedText text={post.title}/></h1><div className="article-meta">Elevix Insights <span> · </span>{new Date(post.date).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'})}</div>{post.image&&<img className="article-hero-image" data-reveal src={post.image} alt=""/>}<div className="article-body"><ArticleBlocks blocks={post.blocks}/></div><div className="article-footer"><Link href="/contact-us" className="text-link">Explore what this could mean for your business →</Link></div></article></main>}
+function ArticleBlocks({blocks}:{blocks:Block[]}){return blocks.map((b,i)=>b.type==='image'&&b.src?<figure key={i}><img src={b.src} alt={b.alt??''} loading="lazy" style={{width:'100%',height:'auto',borderRadius:16}}/></figure>:b.type==='h2'?<h2 key={i}>{b.text}</h2>:b.type==='h3'||b.type==='h4'?<h3 key={i}>{b.text}</h3>:b.type==='li'?<ul key={i}><li>{b.text}</li></ul>:b.type==='blockquote'?<blockquote key={i}>{b.text}</blockquote>:<p key={i}>{b.text}</p>)}

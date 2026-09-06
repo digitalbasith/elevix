@@ -1,0 +1,38 @@
+[
+  {
+    "name": "service-ai",
+    "source": "https://cdn.prod.website-files.com/685975817bb6e67bc3e302a6/6958924ba244cef341c153a0_ai_ml_services.webp"
+  },
+  {
+    "name": "service-cloud",
+    "source": "https://cdn.prod.website-files.com/685975817bb6e67bc3e302a6/6958a68b4062b42c0bdb0d64_cloud_services.webp"
+  },
+  {
+    "name": "service-m365",
+    "source": "https://cdn.prod.website-files.com/685975817bb6e67bc3e302a6/695892648f491d7959e1a2b3_microsoft_365_solutions.webp"
+  },
+  {
+    "name": "service-app",
+    "source": "https://cdn.prod.website-files.com/685975817bb6e67bc3e302a6/69589273002ef62cdcc092de_smart_app_engineering.webp"
+  },
+  {
+    "name": "service-next",
+    "source": "https://cdn.prod.website-files.com/685975817bb6e67bc3e302a6/6958a69c1bb9c20d902d5753_next_gen_app_development.webp"
+  },
+  {
+    "name": "blog-copilot",
+    "source": "https://cdn.prod.website-files.com/69181dd6143900158041312f/69194e9b1a8dc9bab2be707b_Boost%20Productivity%20with%20Microsoft%20Copilot%20in%20Power%20Apps%20and%20Power%20Automate%20(1).png"
+  },
+  {
+    "name": "blog-license",
+    "source": "https://cdn.prod.website-files.com/69181dd6143900158041312f/691858caed655b25556a9433_Exploring%20Microsoft%20Copilot%20License%20Options%20for%20Businesses%20in%202026.png"
+  },
+  {
+    "name": "blog-platform",
+    "source": "https://cdn.prod.website-files.com/69181dd6143900158041312f/69185f95d8c6d4f89badbcb7_Boost%20Productivity%20and%20Insights%20with%20Microsoft%20Power%20Platform%20Tools.png"
+  },
+  {
+    "name": "blog-sharepoint",
+    "source": "https://cdn.prod.website-files.com/69181dd6143900158041312f/69185ddc45dda4ed58726794_Empowering%20Collaboration%20and%20Productivity%20with%20Microsoft%20SharePoint.png"
+  }
+]
