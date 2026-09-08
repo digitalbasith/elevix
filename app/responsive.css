@@ -116,3 +116,30 @@ h1,h2,h3,p,li,.text-link,.breadcrumb{overflow-wrap:break-word}
  .glass-popup[data-slot=dialog-content]{padding:26px 22px;border-radius:22px}.popup-contact-link{font-size:14px;padding:14px;gap:8px}
 }
 @media(prefers-reduced-motion:reduce){.glass-popup[data-slot=dialog-content]{animation:none}}
+
+/* Mobile horizontal-overflow hardening: keep every home-page section inside the viewport. */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+.home-expanded,.home-expanded>section,.hero-v2,.hero-carousel,[data-slot='carousel'],[data-slot='carousel-content'],.tech-marquee,.big-marquee,.visual-ribbon{max-width:100%;overflow-x:hidden}
+.hero-v2-grid,.hero-v2-copy,.hero-v2-art{max-width:100%}
+
+@media(max-width:850px){
+  .hero-v2-art>img,.hero-art-1>img,.hero-art-2>img{width:100%;max-width:100%;right:0;left:0;margin-inline:auto}
+  .hero-orbit{left:5%;width:90%}
+  .hero-orbit:after{inset:-16px}
+  .outcome-carousel,.insights-carousel{width:100%;max-width:100%;overflow:hidden}
+  .marquee-clip{width:100%;max-width:100%;overflow:hidden}
+}
+
+@media(max-width:600px){
+  :root{--page-gutter:20px}
+  .container{width:calc(100% - 40px);max-width:100%}
+  .hero-carousel [data-slot='carousel-content']>div{max-width:none}
+  .hero-v2-copy{width:100%;padding-right:0}
+  .hero-v2-art{width:100%;overflow:hidden}
+  .hero-v2-art>img,.hero-art-1>img,.hero-art-2>img{object-fit:contain;height:100%;top:0}
+  .hero-floating-chip{box-sizing:border-box}
+  .hero-v2-bottom{width:calc(100% - 40px);max-width:100%}
+  .tech-marquee,.big-marquee,.visual-ribbon{width:100%;overflow:hidden}
+  .tech-marquee .marquee-track,.big-marquee .marquee-track,.visual-ribbon .marquee-track{max-width:none}
+  .workplace-visual,.intelligence-art,.people-image,.cinematic-frame,.possibility-section{max-width:100%;overflow:hidden}
+}
