@@ -24,7 +24,7 @@ export const products: ProductDetail[] = [
     eyebrow: 'CONNECT. NURTURE. GROW.',
     description: 'Create, automate, personalize and analyze professional email campaigns from one easy-to-use platform.',
     intro: 'Connect with your audience, build stronger relationships and drive measurable results. From campaign creation and contact management to automation, scheduling and analytics, the platform simplifies your complete email marketing journey.',
-    image: '/images/products/email-marketing-tool.webp',
+    image: '/images/products/email-marketing-tool.svg',
     featuresTitle: 'Everything you need to run smarter campaigns',
     features: [
       { title: 'Professional Email Campaigns', text: 'Create attractive, responsive campaigns using customizable templates and intuitive design tools.' },
@@ -55,7 +55,7 @@ export const products: ProductDetail[] = [
     eyebrow: 'TRACK ATTENDANCE. IMPROVE PERFORMANCE.',
     description: 'Track attendance, working hours, leave and productivity insights from one modern workforce platform.',
     intro: 'Give HR teams and managers real-time visibility into attendance, working hours, leave requests and productivity trends. Built for office, remote and multi-location teams, the app simplifies workforce administration while supporting better operational decisions.',
-    image: '/images/products/productivity-app.webp',
+    image: '/images/products/productivity-app.svg',
     featuresTitle: 'Workforce visibility from one dashboard',
     features: [
       { title: 'Smart Attendance Tracking', text: 'Record attendance through mobile or web check-ins with options for location-based attendance and secure authentication.' },
@@ -84,7 +84,7 @@ export const products: ProductDetail[] = [
     eyebrow: 'LEARN. EXPLORE. GROW.',
     description: 'A growing collection of practical eBooks covering technology, business, digital marketing and professional growth.',
     intro: 'Explore insightful eBooks created to help businesses, professionals and technology enthusiasts learn, improve and stay ahead in a rapidly changing digital world. Each resource brings together practical knowledge, industry insights and expert perspectives in an easy-to-understand format.',
-    image: '/images/products/ebook-library.webp',
+    image: '/images/products/ebook-library.svg',
     featuresTitle: 'What you’ll find in our eBooks',
     features: [
       { title: 'Technology & Innovation', text: 'Discover technologies, digital trends, tools and innovations shaping modern businesses.' },
@@ -110,7 +110,7 @@ export const products: ProductDetail[] = [
     eyebrow: 'TURN EVERY EMAIL INTO AN OPPORTUNITY',
     description: 'Connect with customers, nurture leads and manage targeted outreach with automation, segmentation and analytics.',
     intro: 'From creating professional campaigns to managing contacts, automating follow-ups and tracking performance, our Outreach Tool gives you everything you need to engage the right audience at the right time.',
-    image: '/images/products/outreach-tool.webp',
+    image: '/images/products/outreach-tool.svg',
     featuresTitle: 'Powerful outreach made simple',
     features: [
       { title: 'Professional Email Campaigns', text: 'Create engaging campaigns using customizable templates and an intuitive campaign builder.' },
