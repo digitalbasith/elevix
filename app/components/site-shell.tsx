@@ -26,7 +26,7 @@ export function SiteHeader() {
       <div className="nav-shell">
         <Link className="brand" href="/" aria-label="Elevix home"><img src="/elevix-logo.png" width="181" height="58" alt="Elevix" /></Link>
         <nav className="desktop-nav" aria-label="Main navigation">
-          <DropdownMenu>
+          <DropdownMenu modal={false}>
             <DropdownMenuTrigger className={'nav-link ' + (services.some((s) => path.includes(s.slug)) ? 'active' : '')}>Our Services <ChevronDown size={14} /></DropdownMenuTrigger>
             <DropdownMenuContent align="start" sideOffset={14} className="nav-dropdown service-megamenu">
               <div className="nav-editorial-image" aria-hidden="true"><img src="/images/glass-architecture.webp" alt="" /><span>CONNECTED THINKING.<br />GREATER POSSIBILITIES.</span></div>
@@ -35,7 +35,7 @@ export function SiteHeader() {
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <DropdownMenu>
+          <DropdownMenu modal={false}>
             <DropdownMenuTrigger className={'nav-link ' + (companyActive ? 'active' : '')}>Company <ChevronDown size={14} /></DropdownMenuTrigger>
             <DropdownMenuContent sideOffset={14} className="nav-dropdown">
               {company.map(([name, url]) => <DropdownMenuItem key={url} asChild><Link href={url} prefetch onClick={() => setMobileOpen(false)}>{name}<ArrowUpRight size={15} /></Link></DropdownMenuItem>)}
