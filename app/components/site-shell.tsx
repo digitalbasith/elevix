@@ -43,7 +43,6 @@ export function SiteHeader() {
           </DropdownMenu>
 
           <Link className={'nav-link ' + (path.includes('case-stud') ? 'active' : '')} href="/case-studies">Case Studies</Link>
-          <Link className={'nav-link ' + (path.includes('blog') ? 'active' : '')} href="/blogs">Blog</Link>
         </nav>
 
         <Link className="button button-dark nav-cta" href="/contact-us">Let’s Talk <ArrowUpRight size={17} /></Link>
@@ -58,7 +57,6 @@ export function SiteHeader() {
                 ['Overview', '/overview'],
                 ['Products', '/products'],
                 ['Case Studies', '/case-studies'],
-                ['Blog', '/blogs'],
                 ['Careers', '/careers'],
                 ['FAQ', '/faq'],
                 ['Let’s Talk', '/contact-us'],
@@ -78,8 +76,8 @@ export function SiteFooter() {
       <div className="container footer-top">
         <div className="footer-brand"><Link href="/" aria-label="Elevix home"><img src="/elevix-logo.png" width="140" height="45" alt="Elevix" /></Link><p>Good ideas deserve<br />a great technology partner.</p><a href="mailto:sales@elevixtech.com" className="text-link">sales@elevixtech.com <ArrowUpRight size={17} /></a></div>
         <div><h3>Our Services</h3>{services.map((s) => <Link key={s.slug} href={'/' + s.slug}>{s.title}</Link>)}</div>
-        <div><h3>Company</h3><Link href="/overview">Overview</Link><Link href="/products">Products</Link><Link href="/case-studies">Case Studies</Link><Link href="/careers">Careers</Link><Link href="/faq">FAQ</Link><Link href="/blogs">Blog</Link></div>
-        <div className="footer-address"><h3>Our offices</h3><p><strong>Registered Office – Canada</strong><br />201–6660 Kennedy Road<br />Mississauga, Ontario<br />L5T 2M9, Canada</p><p><strong>Coimbatore</strong><br />47/1A – Sreesha Building<br />Dhanalakshmipuram, Singanallur<br />Coimbatore – 641005</p><p><strong>Madurai</strong><br />63, Teachersline Colony<br />Pasumalai, Madurai – 625004</p><Link className="text-link" href="/contact-us">Start a conversation <ArrowUpRight size={17} /></Link></div>
+        <div><h3>Company</h3><Link href="/overview">Overview</Link><Link href="/products">Products</Link><Link href="/case-studies">Case Studies</Link><Link href="/careers">Careers</Link><Link href="/faq">FAQ</Link></div>
+        <div className="footer-address"><h3>Our offices</h3><p><strong>Registered Office – Canada</strong><br />201–6660 Kennedy Road<br />Mississauga, Ontario<br />L5T 2M9, Canada</p><p><strong>Coimbatore</strong><br />47/1A – Sreesha Building<br />Dhanalakshmipuram, Singanallur<br />Coimbatore – 641005</p><p><strong>Madurai</strong><br />63, Teachers Line<br />Pasumalai, Madurai – 625004</p><Link className="text-link" href="/contact-us">Start a conversation <ArrowUpRight size={17} /></Link></div>
       </div>
       <div className="container footer-bottom"><span>© {new Date().getFullYear()} Elevix. All rights reserved.</span><span>Ideas into impact. Together.</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div>
     </footer>
