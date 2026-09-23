@@ -4,7 +4,7 @@ import { products } from '@/lib/products';
 
 export const metadata = {
   title: 'Products',
-  description: 'Explore Elevix products for marketing, outreach, workforce productivity and business learning.',
+  description: 'Explore Elevix products for outreach, workforce productivity, digital learning and guided mobile experiences.',
 };
 
 export default function ProductsPage() {
@@ -13,7 +13,7 @@ export default function ProductsPage() {
       <section className="container products-hero">
         <div className="breadcrumb"><Link href="/">Home</Link><span>/</span>Products</div>
         <span className="eyebrow">ELEVIX PRODUCTS</span>
-        <h1>Smart tools built to help you <em>market, manage, learn and grow.</em></h1>
+        <h1>Smart tools built to help you <em>connect, manage, learn and grow.</em></h1>
         <p>Explore practical products designed to simplify everyday business operations, improve productivity and create new opportunities.</p>
       </section>
 
