@@ -10,7 +10,6 @@ import { AnimatedText } from './motion-system';
 
 const company = [
   ['Overview', '/overview'],
-  ['Products', '/products'],
   ['Careers', '/careers'],
   ['FAQ', '/faq'],
 ];
@@ -19,7 +18,7 @@ export function SiteHeader() {
   const path = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   useEffect(() => setMobileOpen(false), [path]);
-  const companyActive = company.some(([, url]) => path === url || (url === '/products' && path.startsWith('/products/')));
+  const companyActive = company.some(([, url]) => path === url);
 
   return (
     <header className="site-header">
@@ -34,6 +33,8 @@ export function SiteHeader() {
               <DropdownMenuItem asChild><Link href="/services">Explore all services <ArrowRight size={15} /></Link></DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+
+          <Link className={'nav-link ' + (path.startsWith('/products') ? 'active' : '')} href="/products">Products</Link>
 
           <DropdownMenu modal={false}>
             <DropdownMenuTrigger className={'nav-link ' + (companyActive ? 'active' : '')}>Company <ChevronDown size={14} /></DropdownMenuTrigger>
@@ -54,8 +55,8 @@ export function SiteHeader() {
                 ['Home', '/'],
                 ['Our Services', '/services'],
                 ...services.map((s) => [s.title, '/' + s.slug]),
-                ['Overview', '/overview'],
                 ['Products', '/products'],
+                ['Overview', '/overview'],
                 ['Case Studies', '/case-studies'],
                 ['Careers', '/careers'],
                 ['FAQ', '/faq'],
@@ -74,15 +75,17 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="container footer-brand-stage" data-reveal><span>YOUR NEXT CHAPTER STARTS WITH</span><img src="/elevix-wordmark.svg" alt="Elevix" width="70" height="22" /><Link href="/contact-us" aria-label="Start your next chapter with Elevix"><ArrowUpRight size={48} /></Link></div>
       <div className="container footer-top">
-        <div className="footer-brand"><Link href="/" aria-label="Elevix home"><img src="/elevix-logo.png" width="140" height="45" alt="Elevix" /></Link><p>Good ideas deserve<br />a great technology partner.</p><a href="mailto:sales@elevixtech.com" className="text-link">sales@elevixtech.com <ArrowUpRight size={17} /></a></div>
+        <div className="footer-brand"><Link href="/" aria-label="Elevix home"><img src="/elevix-logo.png" width="140" height="45" alt="Elevix" /></Link><p>Good ideas deserve<br />a great technology partner.</p><a href="mailto:sales@elevixtech.com" className="text-link">sales@elevixtech.com <ArrowUpRight size={17} /></a><a href="https://linkedin.com/elevixtech" target="_blank" rel="noreferrer" className="text-link footer-social-link" aria-label="Elevix on LinkedIn"><LinkedInMark /> LinkedIn <ArrowUpRight size={17} /></a></div>
         <div><h3>Our Services</h3>{services.map((s) => <Link key={s.slug} href={'/' + s.slug}>{s.title}</Link>)}</div>
-        <div><h3>Company</h3><Link href="/overview">Overview</Link><Link href="/products">Products</Link><Link href="/case-studies">Case Studies</Link><Link href="/careers">Careers</Link><Link href="/faq">FAQ</Link></div>
+        <div><h3>Company</h3><Link href="/overview">Overview</Link><Link href="/case-studies">Case Studies</Link><Link href="/careers">Careers</Link><Link href="/faq">FAQ</Link></div>
         <div className="footer-address"><h3>Our offices</h3><p><strong>Registered Office – Canada</strong><br />201–6660 Kennedy Road<br />Mississauga, Ontario<br />L5T 2M9, Canada</p><p><strong>Coimbatore</strong><br />47/1A – Sreesha Building<br />Dhanalakshmipuram, Singanallur<br />Coimbatore – 641005</p><p><strong>Madurai</strong><br />63, Teachers Line<br />Pasumalai, Madurai – 625004</p><Link className="text-link" href="/contact-us">Start a conversation <ArrowUpRight size={17} /></Link></div>
       </div>
       <div className="container footer-bottom"><span>© {new Date().getFullYear()} Elevix. All rights reserved.</span><span>Ideas into impact. Together.</span><a href="#top" aria-label="Back to top">Back to top ↑</a></div>
     </footer>
   );
 }
+
+function LinkedInMark(){return <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><rect x="3" y="9" width="4" height="12" rx="1"/><circle cx="5" cy="5" r="2"/><path d="M10 9h4v1.7c1-1.4 2.4-2.1 4.2-2.1 3.1 0 4.8 2 4.8 5.8V21h-4v-6c0-1.9-.7-2.9-2.2-2.9-1.7 0-2.8 1.2-2.8 3.5V21h-4V9z"/></svg>}
 
 export function CallToAction() {
   return <section className="container cta-wrap"><div className="cta-panel"><div><span className="eyebrow"><span className="status-dot" />LET’S BUILD SOMETHING THAT MATTERS</span><h2><AnimatedText text="Got a bold vision?" /><br /><AnimatedText text="Let’s bring it to life." /></h2><p>Your next chapter starts with a conversation.</p></div><Link href="/contact-us" className="button button-dark">Talk to our experts <ArrowUpRight size={19} /></Link><img className="cta-glass-image" src="/images/product-glass.webp" alt="" loading="lazy" /><span className="cta-watermark" aria-hidden="true">↗</span></div></section>;
