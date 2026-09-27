@@ -70,7 +70,7 @@ export const caseStudies: CaseStudy[] = [
     tools:['Mobile App','Personalization','Digital Consultations','Payments'],
     number:'04',
     color:'mint',
-    image:'/images/products/astro-app.jpg',
+    image:'/images/glass-product.webp',
     detailTitle:'Personalized astrology at your fingertips.',
     detailIntro:'The Astro App is a modern astrology and spiritual guidance platform designed to make personalized astrological services accessible through a simple, intuitive mobile experience. It connects users with astrology-based insights, personalized predictions, horoscope information, consultations and spiritual services through one digital platform.',
     workflow:['Register','Create Profile','Enter Birth Details','Explore Horoscope','Select Astrology Service','Choose Astrologer','Schedule Consultation','Make Payment','Attend Consultation','Receive Updates'],
