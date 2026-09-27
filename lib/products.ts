@@ -20,11 +20,11 @@ export type ProductDetail = {
 export const products: ProductDetail[] = [
   {
     slug: 'employee-productivity-app',
-    title: 'Employee Attendance & Productivity Management App',
-    short: 'Productivity App',
+    title: 'ProdClock',
+    short: 'ProdClock',
     eyebrow: 'TRACK ATTENDANCE. IMPROVE PERFORMANCE.',
-    description: 'Track attendance, working hours, leave and productivity insights from one modern workforce platform.',
-    intro: 'Give HR teams and managers real-time visibility into attendance, working hours, leave requests and productivity trends. Built for office, remote and multi-location teams, the app simplifies workforce administration while supporting better operational decisions.',
+    description: 'Track attendance, working hours, leave, tasks and productivity insights from one modern workforce platform.',
+    intro: 'ProdClock gives HR teams and managers real-time visibility into attendance, working hours, leave requests, tasks and productivity trends. Built for office, remote and multi-location teams, it simplifies workforce administration while supporting better operational decisions.',
     image: '/images/products/productivity-app.svg',
     featuresTitle: 'Workforce visibility from one dashboard',
     features: [
