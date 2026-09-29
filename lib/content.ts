@@ -306,7 +306,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     ctaTitle:'Planning a patient, hospital, or digital healthcare application?',
     ctaText:'Elevixtech can help turn your healthcare workflows into a secure, scalable and user-friendly digital experience—from UI/UX and mobile development to backend systems, integrations, notifications and ongoing support.'
-
+  }
 ];
 
 export const faqs = [
