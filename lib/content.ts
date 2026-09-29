@@ -254,7 +254,59 @@ export const caseStudies: CaseStudy[] = [
         paragraphs:['The Procure-to-Pay workflow provides a structured way to manage the complete procurement lifecycle. From the initial purchase request through supplier selection, purchase order creation, goods receipt, invoice matching, payment and reconciliation, every stage can be managed through one centralized and automated platform. The result is improved visibility, stronger controls, reduced manual effort and better collaboration between business, procurement, suppliers and finance teams.']
       }
     ]
-  }
+  },
+  {
+    slug:'patients-app-leading-hospital',
+    client:'Care.',
+    label:'DIGITAL HEALTHCARE EXPERIENCE',
+    title:'Patients App for a Leading Hospital',
+    description:'A centralized mobile healthcare experience designed to simplify access, streamline digital workflows and improve coordination between patients and healthcare teams.',
+    tools:['Healthcare App','Mobile Experience','Digital Workflows','Secure Access'],
+    number:'07',
+    color:'mint',
+    image:'/images/service-app.webp',
+    detailTitle:'A connected digital healthcare experience for patients and care teams.',
+    detailIntro:'Healthcare organizations need reliable digital solutions that connect patients, healthcare professionals and operational teams while making information accessible at the right time. Patients App was developed as a scalable digital healthcare solution to streamline communication, simplify workflows and give users a more convenient way to access and manage healthcare-related services.',
+    workflow:['Requirement Analysis','UI/UX Design','Application Development','Integration & Testing','Deployment & Support'],
+    sections:[
+      {
+        title:'The Challenge',
+        paragraphs:['Traditional healthcare processes can involve multiple communication channels, manual activities and fragmented information. This can make it difficult for users and healthcare teams to access information quickly and coordinate activities efficiently. The goal was to create a centralized digital platform that could support a more connected and scalable healthcare ecosystem.'],
+        bullets:['Simplify healthcare-related workflows','Improve communication and coordination','Provide convenient mobile access','Reduce dependency on manual processes','Make relevant information easier to access','Support a scalable digital healthcare ecosystem']
+      },
+      {
+        title:'Our Solution',
+        paragraphs:['Elevixtech designed and developed the Patients App with a focus on usability, accessibility and streamlined workflows. The application brings key healthcare-related functionality together in a single digital platform, enabling users to interact with available services through their mobile devices. A clean and intuitive interface helps users navigate the experience with minimal effort.']
+      },
+      {
+        title:'Key Features',
+        cards:[
+          {title:'User-Friendly Mobile Experience',text:'A simple and intuitive interface enables users to navigate the application and access available services conveniently.'},
+          {title:'Secure User Access',text:'Authentication and controlled access help ensure that application functionality and information are available to the appropriate users.'},
+          {title:'Healthcare Service Management',text:'The platform provides a centralized environment for managing and accessing relevant healthcare services.'},
+          {title:'Digital Workflow',text:'Relevant activities can move from manual processes into structured digital workflows.'},
+          {title:'Information Management',text:'Healthcare-related information can be organized and made easier to access, supporting better coordination and visibility.'},
+          {title:'Notifications & Updates',text:'Users can receive relevant updates and notifications to stay informed about important activities.'},
+          {title:'Scalable Architecture',text:'The application is designed to support future enhancements and additional digital healthcare services.'}
+        ]
+      },
+      {
+        title:'Development Approach',
+        steps:['Analyze business requirements, user expectations, workflows and application objectives','Design user journeys and interfaces for a straightforward and accessible experience','Develop the mobile application and supporting backend components','Test integrations and workflows across different scenarios for functionality, usability and reliability','Prepare the solution for deployment with ongoing support and future enhancements']
+      },
+      {
+        title:'Business Impact',
+        paragraphs:['The Patients App provides a foundation for a more connected and digitally enabled healthcare experience.'],
+        bullets:['Improve accessibility to healthcare-related services','Streamline operational workflows','Reduce dependency on manual communication','Improve information visibility','Enhance user convenience','Support better coordination between stakeholders','Establish a foundation for future digital healthcare initiatives']
+      },
+      {
+        title:'The Result',
+        paragraphs:['With the Patients App, the leading hospital gained a centralized mobile platform designed to simplify healthcare interactions and support digital workflows. The project demonstrates how a purpose-built mobile application can help healthcare organizations modernize processes while creating a more convenient digital experience for users.']
+      }
+    ],
+    ctaTitle:'Planning a patient, hospital, or digital healthcare application?',
+    ctaText:'Elevixtech can help turn your healthcare workflows into a secure, scalable and user-friendly digital experience—from UI/UX and mobile development to backend systems, integrations, notifications and ongoing support.'
+
 ];
 
 export const faqs = [
