@@ -19,7 +19,7 @@ export function ContactForm(){
    setStatus('sending');
 
    try{
-     const response=await fetch('https://formsubmit.co/ajax/albasith888@gmail.com',{
+     const response=await fetch('https://formsubmit.co/ajax/reuben.peter@elevixtech.com',{
        method:'POST',
        headers:{Accept:'application/json'},
        body:data,
@@ -55,6 +55,6 @@ export function ContactForm(){
    <div className="field"><label htmlFor="message">How can we help? *</label><textarea id="message" name="message" required minLength={10} maxLength={1500} placeholder="A little about your project, goals, or the challenge you’re solving…" rows={5}/></div>
    <button type="submit" className="button button-dark" disabled={status==='sending'}>{status==='sending'?'Sending…':'Send enquiry'} <ArrowUpRight size={18}/></button>
    {status==='sent'&&<div className="form-result" role="status"><strong><Check size={16}/> Enquiry sent.</strong><p>Thanks — your message has been submitted to the Elevix team.</p></div>}
-   {status==='error'&&<div className="form-result" role="alert"><strong>Couldn’t send the enquiry.</strong><p>Please email <a href="mailto:albasith888@gmail.com">albasith888@gmail.com</a>.</p></div>}
+   {status==='error'&&<div className="form-result" role="alert"><strong>Couldn’t send the enquiry.</strong><p>Please email <a href="mailto:reuben.peter@elevixtech.com">reuben.peter@elevixtech.com</a>.</p></div>}
  </form>
 }
