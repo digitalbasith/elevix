@@ -8,6 +8,7 @@ import './responsive.css';
 import './custom-overrides.css';
 import './products.css';
 import './header-fix.css';
+import './client-theme.css';
 import { WhatsAppContact } from './components/contact-popups';
 import { MotionProvider } from './components/motion-system';
 import { SiteHeader, SiteFooter } from './components/site-shell';
