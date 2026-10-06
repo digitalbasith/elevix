@@ -1,6 +1,9 @@
 {
-  "framework": "nextjs",
-  "buildCommand": "npx next build --webpack",
-  "installCommand": "npm ci",
-  "outputDirectory": ".next"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "bash build.sh",
+  "installCommand": "echo skip",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false
 }
