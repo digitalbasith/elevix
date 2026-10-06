@@ -18,7 +18,7 @@ export default async function Case({params}:{params:Promise<{slug:string}>}){
   return <main id="main" className="case-theme-main">
     <div id="top"/>
     <section className="container case-theme-hero">
-      <div className="case-theme-breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/case-studies">Case Studies</Link><span>/</span><span>{c.short??c.client}</span></div>
+      <div className="case-theme-breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/case-studies">Case Studies</Link><span>/</span><span>{c.client}</span></div>
       <span className="case-theme-pill">{c.label}</span>
       <h1>{c.title}</h1>
       <p>{c.detailIntro??c.description}</p>
