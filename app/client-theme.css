@@ -277,3 +277,5 @@ p{color:var(--client-muted)}
   .whatsapp-fixed{right:14px!important;bottom:14px!important;padding:12px!important}
   .whatsapp-fixed span{display:none!important}
 }
+
+.outcome-text-card{height:100%;min-height:360px}.outcome-slide{align-self:stretch}.outcome-slide>a{width:100%}.outcome-carousel [data-slot=carousel-content]{align-items:stretch}.outcome-text-card .tag-list{margin:0 0 10px}.outcome-text-card h3{font-size:clamp(1.45rem,2.4vw,2rem)}.outcome-text-card p{max-width:65ch}
