@@ -1,1 +1,13 @@
-{"$schema":"https://openapi.vercel.sh/vercel.json","framework":null,"cleanUrls":true,"redirects":[{"source":"/contact","destination":"/contact-us","permanent":true},{"source":"/careers","destination":"/about","permanent":false},{"source":"/faq","destination":"/about","permanent":false}]}
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "true",
+  "buildCommand": "rm -rf dist && mkdir -p dist && cp *.html dist/ && cp -R client-theme case-studies dist/",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "redirects": [
+    {"source": "/contact", "destination": "/contact-us", "permanent": true},
+    {"source": "/careers", "destination": "/about", "permanent": false},
+    {"source": "/faq", "destination": "/about", "permanent": false}
+  ]
+}
